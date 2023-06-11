@@ -1,0 +1,263 @@
+html {
+    background-color: #102E37;
+    font-family: Arial, sans-serif;
+    font-size: 0.95em;
+    line-height: 1.5em;
+}
+
+body {
+    margin: 5px;
+}
+
+::selection {
+    color: #000; 
+    background: #102E37;
+}
+
+h1 {
+    font-weight: normal;
+    margin: auto;
+    background: #fff;
+    line-height: 2.5em;
+    border-radius: 25px 25px 0px 0px;
+    
+}
+
+
+main.wrapper {
+    background-color: white;
+    overflow: auto;
+    border-radius: 0px 0px 25px 25px;
+}
+
+img {
+    border-radius: 25px;
+    margin: 5px;
+}
+
+p {
+    margin: 1em; 
+}
+
+h2,h3 {
+    font-weight: normal;
+    margin-left: 1em;
+    line-height: 1em;
+}
+
+a {
+    color:#102E37;
+    text-decoration: none;
+}
+
+a:hover {
+    color: whitesmoke;
+    background-color: darkcyan;
+    text-decoration: none;
+}
+
+footer {
+    clear: both;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive rules */
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    main.wrapper {
+        width: 80%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 79%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: left;
+        margin-right: 2em;
+    }
+    
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    main.wrapper {
+        width: 90%;
+        margin: auto;
+    }
+    
+    h1 {
+        width: 89%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 50%;
+        float: right;
+        margin-left: 1em;
+    }
+
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    main.wrapper {
+        width: 100%;
+    }
+    
+    h1 {
+        width: 99%;
+        padding-left: 1%;
+    }
+    
+    picture.profile img {
+        width: 95%;
+        margin: 5px;
+    }
+    
+}
+
+.topnav {
+    margin: auto;
+    background-color: #2BBBD8;
+    max-height: 10%;
+    overflow: hidden;
+    
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 16px;
+    max-height: 22px;
+}
+
+.topnav a.hover, .active {
+    background-color: #102E37;
+    height: max-content;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+#ghIcon, #liIcon{
+     text-align:justify
+
+}
+.navLogo{
+    height: 1em;
+    display: inline-block;
+}
+
+/* Responsive rules - apply when screen width is less than 1200px */
+
+@media screen and (max-width: 1199px) {
+    /* .topnav a:not(:first-child) {
+        display: none;
+    } */
+    
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    
+    .topnav.responsive {
+        position: relative;
+    }
+    
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+
+/* DESKTOP */
+@media all and (min-width:1200px) {
+    .topnav {
+        width: 80%;
+        /* height: 45px; */
+    }
+}
+
+/* TABLET */
+@media all and (min-width:501px) and (max-width:1199px) {
+    .topnav {
+        width: 90%;
+    }
+}
+
+/* PHONE */
+@media all and (max-width:500px) {
+    .topnav {
+        width: 100%;
+    }
+}
+
+form>div {
+    margin:1em; /*Top Right Bottom Left*/
+}
+
+
+/* keeps form from bunching up to left */
+@media all and (min-width:501px){
+    div.wrapper form{
+        margin-left:22.8px;
+    }
+}
+
+/* start reCAPTCHA styles */
+		
+/* writes to small text above reCAPTCHA upon failure */
+.dateFeedback{
+    font-style:italic;
+    font-size:70%;
+    font-weight:bold;
+    color:#f00;
+}
+
+input:required {
+      border: 1px solid red;
+}
+
+input:optional, textarea:optional {
+     background-color:#f1f1f1;
+     border:1px solid #ccc;
+}
+
+input[type="submit"], input[type="button"] {
+  background-color: #fff;
+  border-radius: 4px;
+  border: solid 1px #ccc;
+  padding: 0.3em 0.5em;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  max-width: 350px;
+}
+
+legend {
+  margin-left: 0.5em;
+  padding: 0.2em 0.5em;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}

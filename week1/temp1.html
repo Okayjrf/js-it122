@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <head>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+
+  <nav class="topnav" id="myTopnav">
+
+  <a href="index.html"> week 1 </a>
+</nav>
+
+<main class="wrapper">
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='./img/ducktemp.jpeg'">Change to a duck</button>
+
+<img id="myImage" src="./img/cattemp.jpeg" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='./img/cattemp.jpeg'">Change to cat</button>
+
+</main>
+</body>
+</html>

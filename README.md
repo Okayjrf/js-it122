@@ -1,1 +1,5 @@
-My name is JR and this is is my GitHub Repo for IT122 which will showcase all my classwork.
+IT 122
+
+Welcome to my it122 repo! Here you will find directories where of the weeks work. Feel free to poke around.
+
+Here is the github Pages link: https://github.com/Okayjrf
