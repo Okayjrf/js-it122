@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cat facts button</title>
+</head>
+<body>
+    <div class="container">
+        <h1>HEY! I love cats what about you?</h1>
+            <p>Below are random cat facts!</p>
+
+                <button onclick="showCatFacts()">Get Cat Fact</button>
+
+             <p id="catfact"></p>
+    </div>
+    <script>
+        async function getCatFact(){
+            const api_endpoint ="https://cat-fact.herokuapp.com/facts/random?amount=1"
+            const response = await fetch(api_endpoint);
+            const json_response = await response.json();
+
+            console.log(json_response);
+            return json_response;
+        }
+
+        async function showCatFacts(){
+            const catFactResponse = await getCatFact();
+            const paragraphTag  = document.getElementById("catfact");
+            paragraphTag.innerText = catFactResponse.text;
+        }
+
+    </script>
+</body>
+</html>
