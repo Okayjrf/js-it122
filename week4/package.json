@@ -1,0 +1,24 @@
+{
+  "name": "jr-eslint-it122",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01 let_cannot_be_redeclared.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint *.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Okayjrf/it122eslint.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Okayjrf/it122eslint/issues"
+  },
+  "homepage": "https://github.com/Okayjrf/it122eslint.git#readme",
+  "devDependencies": {
+    "eslint": "^8.39.0"
+  }
+}
