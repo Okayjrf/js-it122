@@ -2,7 +2,7 @@
 // Modify this code so that response does not return duplicate facts
 
 import express from 'express';
-import {data} from '../facts.js';
+import {data} from './facts.js';
 
 
 const app = express();

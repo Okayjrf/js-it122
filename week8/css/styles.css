@@ -1,0 +1,33 @@
+body {
+    background-color: #F0F6FF; /* Light baby blue */
+    color: #333333; /* Dark gray for text */
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #3366CC; /* Medium blue for headings */
+  }
+  
+  a {
+    color: #6699FF; 
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .button {
+    background-color: #99CCFF; /* Pale blue for buttons */
+    color: #FFFFFF; /* White text for buttons */
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #6699FF; /* Light blue on hover */
+  }
+  
+  
