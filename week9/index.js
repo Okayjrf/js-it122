@@ -14,8 +14,7 @@ async function getPlanetFact() {
   const api_endpoint = `https://api.api-ninjas.com/v1/planets?name=${userInput}`
   const response = await fetch(api_endpoint,requestOptions);
   const json_response = await response.json();
-
-  //console.log(JSON.stringify(json_response));
+  
   let keys = Object.keys(json_response[0]);
   let data = JSON.stringify(json_response);
   return data;
